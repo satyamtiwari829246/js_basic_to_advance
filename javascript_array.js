@@ -52,3 +52,38 @@ console.log(result3);// Output: ["Hello", "World", "JavaScript"]
 let arr2 = [1, 2, 3, 4, 5];
 arr2.fill(0, 2, 4);//it will fill the array with 0 from index 2 to index 4
 document.write("Array after fill: " + arr2 + "<br>");// Output: [1, 2, 0, 0, 5]
+
+//for each() method executes a provided function once for each array element.
+let arr3 = [1, 2, 3, 4, 5];
+arr3.forEach(function(value,ram,shyam){
+    document.write(value+"<br>");
+    document.write(ram+"<br>");
+    document.write(shyam+"<br>");
+});
+
+//includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+let arr4 = [1, 2, 3, 4, 5];
+let includesValue = arr4.includes(3);
+document.write("Array includes 3: " + includesValue + "<br>");
+
+//is array() method determines whether the passed value is an Array.
+let arr5 = [1, 2, 3, 4, 5];
+let isArray = Array.isArray(arr5);
+document.write("Is arr5 an array? " + isArray + "<br>");
+
+//join() method joins all elements of an array into a string.
+let arr6 = ["Hello", "World"];
+let joinedString = arr6.join(" ");
+document.write("Joined string: " + joinedString + "<br>");
+
+//keys() method returns a new Array Iterator object that contains the keys for each index in the array.
+let arr7 = ["a", "b", "c"];
+let keys = arr7.keys();
+for (let key of keys) {
+    document.write("Key: " + key + "<br>");
+}
+//push() method adds one or more elements to the end of an array and returns the new length of the array.
+let arr8 = [1, 2, 3];
+let newLength = arr8.push(4, 5);
+document.write("New length after push: " + newLength + "<br>");
+document.write("Array after push: " + arr8 + "<br>");
