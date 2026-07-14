@@ -31,3 +31,24 @@ document.write("Name: " + person3.name + "<br>");
 //getting the enteries of the object
 let result = Object.entries(person);
 document.write("Entries of the object: " + result + "<br>");
+
+//freezing the object
+Object.freeze(person);
+person.name = "priyam kumar"; //this will not change the value of name property as the object is frozen
+document.write("Name: " + person.name + "<br>");
+
+//object .getOwnPropertyDescriptor()
+
+let car = {
+    brand: "Toyota",
+}
+
+Object.defineProperty(car, "model", {
+    value: "Camry",
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
+
+let descriptor = Object.getOwnPropertyDescriptor(car, "model");
+document.write("Descriptor of model property: " + JSON.stringify(descriptor) + "<br>");
