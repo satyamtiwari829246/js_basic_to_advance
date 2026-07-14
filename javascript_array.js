@@ -40,3 +40,15 @@ var fruits =  fruit.copyWithin(2, 0, 2); //it will copy the elements from index 
 let arr1 = [1,2,3,4];
 result = arr1.flatMap(x => [x * 10]);
 console.log(result); // Output: [10, 20, 30, 40]
+
+
+let words = ["Hello World", "JavaScript"];
+
+let result3 = words.flatMap(word => word.split(" "));
+
+console.log(result3);// Output: ["Hello", "World", "JavaScript"]
+
+//fill() method fills all the elements of an array from a start index to an end index with a static value. It returns the modified array.
+let arr2 = [1, 2, 3, 4, 5];
+arr2.fill(0, 2, 4);//it will fill the array with 0 from index 2 to index 4
+document.write("Array after fill: " + arr2 + "<br>");// Output: [1, 2, 0, 0, 5]
