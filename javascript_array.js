@@ -87,3 +87,9 @@ let arr8 = [1, 2, 3];
 let newLength = arr8.push(4, 5);
 document.write("New length after push: " + newLength + "<br>");
 document.write("Array after push: " + arr8 + "<br>");
+
+//pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+let arr9 = [1, 2, 3, 4, 5];
+let poppedElement = arr9.pop();
+document.write("Popped element: " + poppedElement + "<br>");
+document.write("Array after pop: " + arr9 + "<br>");
