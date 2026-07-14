@@ -35,3 +35,8 @@ var fruits =  fruit.copyWithin(2, 0, 2); //it will copy the elements from index 
  let arr = [1, 2, [3, 4, [5, 6]]];
  let flatArr = arr.flat(1); //it will flatten the array up to the specified depth
  console.log(flatArr);
+
+//flatmap() method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map followed by a flat of depth 1.
+let arr1 = [1,2,3,4];
+result = arr1.flatMap(x => [x * 10]);
+console.log(result); // Output: [10, 20, 30, 40]
