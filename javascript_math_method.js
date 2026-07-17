@@ -10,11 +10,17 @@ console.log(Math.min(1, 2, 3, 4, 5));//output: 1
 console.log(Math.pow(2, 3));// Output: 8
 console.log(Math.sqrt(16));// Output: 4
 console.log(Math.random());// Output: a random number between 0 and 1
-console.log(Math.trunc(4.9));// Output: 4
+console.log(Math.trunc(4.9));// Output: 4//return the integer part of a number by removing any fractional digits
 console.log(Math.sign(-5));// Output: -1
 console.log(Math.log(10));// Output: 2.302585092994046
 console.log(Math.exp(2));// Output: 7.38905609893065
 console.log(Math.cbrt(27));// Output: 3
 console.log(Math.hypot(3, 4));// Output: 5
+console.log(Math.imul(2, 3));// Output: 6
+console.log(Math.clz32(1));// Output: 31
+console.log(Math.fround(1.5));// Output: 1.5
+console.log(Math.sinh(1));// Output: 1.1752011936438014
+console.log(Math.cosh(1));// Output: 1.5430806348152437
+console.log(Math.tanh(1));// Output: 0.7615941559557649
 
 
