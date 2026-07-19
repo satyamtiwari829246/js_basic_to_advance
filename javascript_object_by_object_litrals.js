@@ -30,4 +30,3 @@ emp.salary = "30000";
  document.writeln(e.id+" "+e.name+" "+e.salary);
 
 
- Object.create()//
