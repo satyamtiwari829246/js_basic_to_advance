@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+  <form id="myForm" onsubmit="return validateform()">
+  <label>Name:</label>
+  <input type="text" id="name">
+  <br><br>
+
+  <label>Passward:</label>
+  <input type="password" id="passward">
+  <br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<p id="message" style="color:red;"></p>
+</div>
+
+
+   <script>
+    function validateform() {
+     var name = document.querySelector("#name").value;
+     var passward = document.querySelector("#passward").value;
+     if(name.trim()== ""){
+        alert("name can't blank");
+        return false;
+     }else if(passward.length<6){
+        alert("passward must be at least 6 character long");
+        return false;
+        
+     }   
+     alert("form submitted sucessfully") 
+     return true;    
+    }
+</script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+<body>
+
+<form id="myForm" onsubmit="return validateform()">
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" id="passward">
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+function validateform() {
+
+    var name = document.querySelector("#name").value;
+    var passward = document.querySelector("#passward").value;
+
+    if (name.trim() == "") {
+        alert("Name can't be blank");
+        return false;
+    }
+
+    if (passward.length < 6) {
+        alert("Password must be at least 6 characters long");
+        return false;
+    }
+
+    alert("Form Submitted Successfully");
+    return true;
+}
+</script>
+
+</body>
+</html> -->
