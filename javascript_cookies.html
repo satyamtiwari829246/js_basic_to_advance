@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Example</title>
+</head>
+<body>
+
+    <input type="button" value="Set Cookie" onclick="set_cookies()">
+    <input type="button" value="Get Cookie" onclick="getcookie()">
+
+    <script>
+        function set_cookies() {
+            document.cookie = "username=priyam; path=/";
+            alert("Cookie has been set.");
+        }
+
+        function getcookie() {
+            if (document.cookie.length != 0) {
+                alert("Cookies: " + document.cookie);
+            } else {
+                alert("Cookies not available.");
+            }
+        }
+    </script>
+
+</body>
+</html>
