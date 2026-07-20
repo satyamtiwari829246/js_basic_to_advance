@@ -5,4 +5,3 @@ console.log(Number.MIN_SAFE_INTEGER);
 console.log(Number.POSITIVE_INFINITY);
 console.log(Number.NEGATIVE_INFINITY);
 console.log(Number.NaN);
-console.log(Number.EPSILON);
