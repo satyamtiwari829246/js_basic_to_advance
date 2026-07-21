@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="setcookie" onclick=" set_cookies()">
+    <input type="button" value="getcookie" onclick="get_cookies()">
+
+    <script>
+        function set_cookies(){
+            document.cookie= "username = duke martin; expires = sun ,20 aug 2030 12:00:00 UTC;path=/"
+            document.cookie= "city= delhi; expires = sun,20 aug 2030 12:00:00 UTC; path=/"
+        }
+        function get_cookies(){
+            if(document.cookie.length!=0){
+                var array = document.cookie.split(";");
+                alert (array[0]+" "+array[1]+array[2]);
+
+            }else{
+                alert("cookie not avaliable");
+
+            }
+        }
+    </script>
+</body>
+</html>
